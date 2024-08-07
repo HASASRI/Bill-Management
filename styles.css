@@ -1,0 +1,175 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #0a0726;
+    background-color: #090979;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    text-align: center;
+}
+
+h1 {
+    color: #170d74;
+    margin-bottom: 20px;
+}
+
+.form-container h2 {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#billForm {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+#billForm label {
+    margin-bottom: 5px;
+}
+
+#billNumber, #date, #amount, #description, #category {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #090979;
+}
+#generateReport {
+    transition: background-color 0.5s, transform 0.3s;
+}
+
+#generateReport:hover {
+    background-color: #ff8c00;
+    transform: scale(1.1);
+}
+
+.table-container, .report-container {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border: 1px solid #0a0726;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #0a0726;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #0d1d74;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.month-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #0d1d74;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: default;
+    font-family: 'Arial Black', sans-serif;
+}
+
+.budget-summary {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #f8f9fa;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li button {
+    background-color: #dc3545;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    padding: 5px 10px;
+ 
+}
+
+li button:hover {
+    background-color: #090979;
+}
+
+.balance-box {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #0d1d74;
+    border: none;
+    border-radius: 5px;
+}
+
+.icons i {
+    color: red; /* This will set the color of all icons to red */
+    cursor: pointer; /* Optional: changes the cursor to a pointer on hover */
+}
+
+.edit-icon {
+    color: red; /* This targets the edit icon specifically */
+}
+
+.delete-icon {
+    color: red; /* This targets the delete icon specifically */
+}

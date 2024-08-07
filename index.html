@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bill Management System</h1>
+
+        <div class="form-container">
+            <h2>WELCOME</h2>
+            <form id="billForm">
+                <label for="billNumber"><b>Bill Number:</b></label>
+                <input type="text" id="billNumber" required>
+
+                <label for="date"><b>Date:</b></label>
+                <input type="date" id="date" required>
+
+                <label for="amount"><b>Amount:</b></label>
+                <input type="number" id="amount" step="0.01" required>
+
+                <label for="description"><b>Description:</b></label>
+                <input type="text" id="description" required>
+
+                <label for="category"><b>Category:</b></label>
+                <select id="category" required>
+                    <option value="">Select Category</option>
+                    <option value="Utilities">Utilities</option>
+                    <option value="Groceries">Groceries</option>
+                    <option value="Entertainment">Entertainment</option>
+                    <option value="Transportation">Transportation</option>
+                    <option value="Healthcare">Healthcare</option>
+                    <option value="Others">Others</option>
+                </select>
+
+                <button type="submit">Add Bill</button><br>
+                <button type="button" id="clearAll">Clear All Bills</button>
+            </form>
+        </div>
+
+        <div class="table-container">
+            <h2>All Bills</h2>
+            <table id="billsTable">
+                <thead>
+                    <tr>
+                        <th>Bill Number</th>
+                        <th>Date</th>
+                        <th>Amount</th>
+                        <th>Description</th>
+                        <th>Category</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Bill rows will be added here dynamically -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="report-container">
+            <h2>Generate Report</h2>
+            <label for="startDate">Start Date:</label>
+            <input type="date" id="startDate">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+            <label for="endDate">End Date:</label>
+            <input type="date" id="endDate"><br><br>
+
+            <button id="generateReport">Generate Report</button>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <button id="downloadReport">Download Report</button>
+
+            <h3>Report</h3>
+            <table id="reportTable">
+                <thead>
+                    <tr>
+                        <th>Bill Number</th>
+                        <th>Date</th>
+                        <th>Amount</th>
+                        <th>Description</th>
+                        <th>Category</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Report rows will be added here dynamically -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
